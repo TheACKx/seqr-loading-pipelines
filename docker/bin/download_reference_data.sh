@@ -7,8 +7,8 @@ BUILD_VERSION=$1
 # download VEP cache
 mkdir -p /vep_data/homo_sapiens
 cd /vep_data
-CACHE_FILE=homo_sapiens_vep_99_GRCh${BUILD_VERSION}.tar.gz
-curl -LO "http://ftp.ensembl.org/pub/release-99/variation/indexed_vep_cache/${CACHE_FILE}"
+CACHE_FILE=homo_sapiens_vep_110_GRCh${BUILD_VERSION}.tar.gz
+curl -LO "http://ftp.ensembl.org/pub/release-110/variation/indexed_vep_cache/${CACHE_FILE}"
 tar xzf "${CACHE_FILE}"
 rm "${CACHE_FILE}"
 
